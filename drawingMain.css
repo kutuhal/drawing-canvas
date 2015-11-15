@@ -10,12 +10,11 @@
 .heading {
 		margin: auto;
 		width: 455px;
-    color: blue;
+    color: #7B63EC;
     padding-bottom: 10px;
 }
 #drawing {
-		width: 780px;
-		height: 500px;
+
 		border: 1px solid;
 		margin: auto;
 	}
@@ -24,8 +23,8 @@
     width:80px;
 }
 #clearBtn{
-    color: purple;
+    color: white;
     font-size: large;
-    background-color: aqua;
+    background-color: #337ab7;
     width: 80px;
 }

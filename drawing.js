@@ -93,9 +93,12 @@ function clearCanvas() {
   clickY = [];
   clickDrag = [];
 };
-
-EventUtil.addHandler (document.getElementById('drawing'), 'mousedown', whenMousedown);
-EventUtil.addHandler (document.getElementById('drawing'), 'mousemove', whenMousemove);
-EventUtil.addHandler (document.getElementById('drawing'), 'mouseup', whenMouseup);
-EventUtil.addHandler (document.getElementById('drawing'), 'mouseleave', whenMouseleave);
+drawingCanvas = document.getElementById('drawing')
+EventUtil.addHandler (drawingCanvas, 'mousedown', whenMousedown);
+EventUtil.addHandler (drawingCanvas, 'mousemove', whenMousemove);
+EventUtil.addHandler (drawingCanvas, 'mouseup', whenMouseup);
+EventUtil.addHandler (drawingCanvas, 'mouseleave', whenMouseleave);
 EventUtil.addHandler(document.getElementById('clearBtn'), 'click', clearCanvas) ;
+
+drawingCanvas.setAttribute('width', '780');
+drawingCanvas.setAttribute('height', '500');
