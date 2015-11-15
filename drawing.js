@@ -1,0 +1,1 @@
+context = document.getElementById('drawing').getContext("2d");
