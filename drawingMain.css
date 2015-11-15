@@ -1,0 +1,31 @@
+#container{
+		margin: auto;
+		width: 800px;
+		height: 605px;
+		border: 1px solid;
+	}
+#body {
+		margin: 10px;
+	}
+.heading {
+		margin: auto;
+		width: 455px;
+    color: blue;
+    padding-bottom: 10px;
+}
+#drawing {
+		width: 780px;
+		height: 500px;
+		border: 1px solid;
+		margin: auto;
+	}
+#clearBtnDiv{
+    margin: auto;
+    width:80px;
+}
+#clearBtn{
+    color: purple;
+    font-size: large;
+    background-color: aqua;
+    width: 80px;
+}

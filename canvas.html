@@ -1,60 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title></title>
-<style type="text/css">
+	<title> Drawing Canvas</title>
+<link rel='stylesheet' type="text/css" href = 'drawingMain.css'>
 
-	#container{
-		margin: auto;
-		width: 500px;
-		height: 500px;
-		border: 1px solid;
-
-
-	}
-	#body {
-		margin: 10px;
-	}
-.center-content {
-		margin: auto;
-		width: 450px;
-}
-	#drawing {
-		width: 450px;
-		height: 350px;
-		border: 1px solid;
-		margin: auto;
-
-	}
-</style>
 </head>
 <body>
 <div id = 'container'>
 <div id='body'>
-	<h1 class = 'center-content'> Welcome to Canvas </h1>
-<canvas id ='drawing' onclick ='paint = true'; >
-	A sample drawing
+	<h1 class = 'heading'> Welcome to a Drawing Canvas!!</h1>
+<canvas id ='drawing'  >
+	A sample drawing <! this will be shown if canvas doesnt work in the browser !>
 </canvas>
 </div>
+<div id ='clearBtnDiv'>
+	<input type="submit" value="Clear" id ='clearBtn'  > </div>
 </div>
-<script type="text/javascript">
-	context = document.getElementById('drawing').getContext("2d");
-	context.strokeStyle = "#df4b26";
-	context.fillStyle = "red";
-  	context.lineJoin = "round";
-  	context.beginPath();
-	context.moveTo(20,20);
-	context.lineTo(20,100);
-	context.lineTo(70,100);
-	context.closePath();
-    context.stroke();
-
-/*stroke(128, 255, 255);
-for (var i= 0; i < 400 ; i = i + 10) {
-    line(i, 0, i, 400);
-    line(0, i, 400, i);
-}*/
-
-</script>
+<script type="text/javascript" src= 'drawing.js'> </script>
 </body>
 </html>
