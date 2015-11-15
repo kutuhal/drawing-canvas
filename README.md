@@ -14,7 +14,7 @@ This was done to crystallize the learning of < canvas> HTML5 tag and related jav
 - context.lineTo(X,Y);
 - context.lineTo(X,Y);
 - context.closePath();  _- this is optional_
-- context.stroke();     _- this draws above moveTo/lineTo path_
+- context.stroke();     _- this draws on the path created by moveTo/lineTo_
 
 #### Additional resources
 http://www.williammalone.com/articles/create-html5-canvas-javascript-drawing-app/
